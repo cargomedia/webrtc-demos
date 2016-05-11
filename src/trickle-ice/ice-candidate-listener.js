@@ -21,6 +21,7 @@ IceCandidateListener.prototype.onIceCandidate = function(event) {
 };
 
 function IceCandidate(text) {
+  this._text = text;
   var candidateStr = 'candidate:';
   var pos = text.indexOf(candidateStr) + candidateStr.length;
   var fields = text.substr(pos).split(' ');
@@ -33,5 +34,9 @@ function IceCandidate(text) {
   this.port = fields[5];
   this.type = fields[7];
 }
+
+IceCandidate.prototype.toString = function() {
+  return this._text;
+};
 
 module.exports = IceCandidateListener;
