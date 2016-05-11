@@ -16,6 +16,7 @@ IceCandidateListener.prototype.onIceCandidate = function(event) {
   } else {
     this.emit('complete', this._candidates);
     this._pc.onicecandidate = null;
+    this._pc.close();
   }
 };
 
