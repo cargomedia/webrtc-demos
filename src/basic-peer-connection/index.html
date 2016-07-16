@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>WebRTC demos</title>
+    <script src="../../node_modules/webrtc-adapter/out/adapter.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="signaling.js"></script>
+    <script src="pc-offer.js"></script>
+    <script src="pc-answer.js"></script>
+    <script src="demo.js"></script>
+    <style>
+      .videoWrapper {
+        display: inline-block;
+        text-align: center;
+      }
+      video {
+        width: 400px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="videoWrapper">
+      <h4 class="title">Offer</h4>
+      <video id="offer" autoplay muted></video>
+    </div>
+    <div class="videoWrapper">
+      <h4 class="title">Answer</h4>
+      <video id="answer" autoplay></video>
+    </div>
+  </body>
+</html>
