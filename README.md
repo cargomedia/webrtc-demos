@@ -2,5 +2,4 @@
 
 ### How to run
 - `npm install`
-- `gulp`
-- Open in browser(Chrome preferable) `/test/index.html`.
+- Browse demos under `src/` directory. Each demo has its own dir.

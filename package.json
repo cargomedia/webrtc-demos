@@ -5,11 +5,6 @@
   "main": "index.js",
   "author": "Cargomedia",
   "license": "MIT",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-browserify": "^0.5.1",
-    "gulp-rename": "^1.2.2"
-  },
   "dependencies": {
     "jquery": "^3.1.0",
     "webrtc-adapter": "^1.4"
